@@ -97,7 +97,7 @@
             $("#titulo").val(data.titulo_nosotrs);
             $("#subtitulo").val(data.subtitulo_nosotrs);
             $("#texto").val(data.texto_nosotrs);
-            $("#imagen").val(data.imagen_nosotrs);
+            $("#imagenOculta").val(data.imagen_nosotrs);
             $("#btnGuardar").data('accion', 'editar').text('Editar').data("id", id);
         },"json");
     });

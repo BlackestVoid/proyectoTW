@@ -90,15 +90,15 @@ $nosotros = $db->select('nosotros', '*');
 
         <?php foreach ($nosotros as $nosotro) { ?>
             <div class="slider__container">
-                <div class="slider__text">
+                <div class="slider__text" >
                     <div class="col-sm-9">
                         <h1><?= $nosotro['titulo_nosotrs'] ?></h1>
                         <h3><?= $nosotro['subtitulo_nosotrs'] ?></h3>
                         <p><?= $nosotro['texto_nosotrs'] ?></p>
                     </div>
-                    <div class="slider__background"
-                         style="background-image: url(admin/img/subida/<?= $nosotro['imagen_nosotrs'] ?>);"></div>
                 </div>
+                <div class="slider__background"
+                     style="background-image: url(admin/img/subida/<?= $nosotro['imagen_nosotrs'] ?>);"></div>s
             </div>
 
         <?php } ?>

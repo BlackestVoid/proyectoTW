@@ -33,7 +33,8 @@ function editarNos(){
     $db->update("nosotros",[
         "titulo_nosotrs" => $titulo,
         "subtitulo_nosotrs" => $subtitulo,
-        "texto_nosotrs" => $texto
+        "texto_nosotrs" => $texto,
+        "imagen_nosotrs" => substr($imagenOculta, 12)
     ], ["id_nosotrs" => $id]);
 
     echo "Se ha actualizado correctamente el apartado con ID ".$id;
